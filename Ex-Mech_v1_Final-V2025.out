@@ -1,0 +1,141 @@
+
+Feature: (GTsuite/31-dec-2025)
+GT-SUITE workstation: (i7-3581de-23)
+License Server: (gtg-cluster)
+License entitlement ID: (FPHVFJXIVBATUBLPSZUBWQUZQNUEEF)
+License ID: (-1828290933)
+
+ INFO
+ ==============================================================================
+ GT-SUITE - GAMMA TECHNOLOGIES
+ ------------------------------------------------------------------------------
+ License  :  GT-SUITE
+ Version  :  2025
+ Build #  :  0.7500
+ Platform :  Windows 64 bit
+ Date     :  23-OCT-24  Time: 11:50:55
+ File     :  C:\Users\jverriere\Documents\Demo-wartsila\Ex-Mech_v1_Final-V2025.dat
+ ==============================================================================
+  
+ INFO ----- Definition of Messages -----
+       WARN:    Try to correct       - might affect accuracy
+       ALERT:   Should be corrected  - likely to produce inaccurate results
+       SEVERE:  Must be corrected    - will produce meaningless results
+  
+  
+  
+-----------------------------------------------------------------------------------------------------------------------------------
+  -------------------------------------------------------------------------------
+  Case Number:        1 of  1
+  Case Setup Number:  1
+-----------------------------------------------------------------------------------------------------------------------------------
+  -------------------------------------------------------------------------------
+  
+ Running as v2025
+  
+  
+ *STATUS: ------------------ Start of Case 1 -----------------------------------
+  
+  
+  Case Number:        1 of  1
+  Case Setup Number:  1
+  
+ Running as v2025
+  
+ INFO RLT Update interval has been set to  6.E-02 seconds
+  
+  
+ INFO Total Number of Parts =  10
+  
+  
+ *STATUS: ------------------ Start of Time Stepping, Case 1 --------------------
+  
+ ODE Solution Cluster: ODE Cluster 1 (Column 1)
+  ODE Step    1000, dt =   1.000E-03, t =     1.00
+ ODE Solution Cluster: ODE Cluster 1 (Column 1)
+  ODE Step    2000, dt =   1.000E-03, t =     2.00
+ ODE Solution Cluster: ODE Cluster 1 (Column 1)
+  ODE Step    3000, dt =   1.000E-03, t =     3.00
+ ODE Solution Cluster: ODE Cluster 1 (Column 1)
+  ODE Step    4000, dt =   1.000E-03, t =     4.00
+ ODE Solution Cluster: ODE Cluster 1 (Column 1)
+  ODE Step    5000, dt =   1.000E-03, t =     5.00
+ ODE Solution Cluster: ODE Cluster 1 (Column 1)
+  ODE Step    6000, dt =   1.000E-03, t =     6.00
+ ODE Solution Cluster: ODE Cluster 1 (Column 1)
+  ODE Step    7000, dt =   1.000E-03, t =     7.00
+ ODE Solution Cluster: ODE Cluster 1 (Column 1)
+  ODE Step    8000, dt =   1.000E-03, t =     8.00
+ ODE Solution Cluster: ODE Cluster 1 (Column 1)
+  ODE Step    9000, dt =   1.000E-03, t =     9.00
+ ODE Solution Cluster: ODE Cluster 1 (Column 1)
+  ODE Step   10000, dt =   1.000E-03, t =     10.0
+ ODE Solution Cluster: ODE Cluster 1 (Column 1)
+  ODE Step   11000, dt =   1.000E-03, t =     11.0
+ ODE Solution Cluster: ODE Cluster 1 (Column 1)
+  ODE Step   12000, dt =   1.000E-03, t =     12.0
+ ODE Solution Cluster: ODE Cluster 1 (Column 1)
+  ODE Step   13000, dt =   1.000E-03, t =     13.0
+ ODE Solution Cluster: ODE Cluster 1 (Column 1)
+  ODE Step   14000, dt =   1.000E-03, t =     14.0
+ ODE Solution Cluster: ODE Cluster 1 (Column 1)
+  ODE Step   15000, dt =   1.000E-03, t =     15.0
+ ODE Solution Cluster: ODE Cluster 1 (Column 1)
+  ODE Step   16000, dt =   1.000E-03, t =     16.0
+ ODE Solution Cluster: ODE Cluster 1 (Column 1)
+  ODE Step   17000, dt =   1.000E-03, t =     17.0
+ ODE Solution Cluster: ODE Cluster 1 (Column 1)
+  ODE Step   18000, dt =   1.000E-03, t =     18.0
+ ODE Solution Cluster: ODE Cluster 1 (Column 1)
+  ODE Step   19000, dt =   1.000E-03, t =     19.0
+ ODE Solution Cluster: ODE Cluster 1 (Column 1)
+  ODE Step   20000, dt =   1.000E-03, t =     20.0
+ ODE Solution Cluster: ODE Cluster 1 (Column 1)
+  ODE Step   21000, dt =   1.000E-03, t =     21.0
+ ODE Solution Cluster: ODE Cluster 1 (Column 1)
+  ODE Step   22000, dt =   1.000E-03, t =     22.0
+ ODE Solution Cluster: ODE Cluster 1 (Column 1)
+  ODE Step   23000, dt =   1.000E-03, t =     23.0
+ ODE Solution Cluster: ODE Cluster 1 (Column 1)
+  ODE Step   24000, dt =   1.000E-03, t =     24.0
+ ODE Solution Cluster: ODE Cluster 1 (Column 1)
+  ODE Step   25000, dt =   1.000E-03, t =     25.0
+ ODE Solution Cluster: ODE Cluster 1 (Column 1)
+  ODE Step   26000, dt =   1.000E-03, t =     26.0
+ ODE Solution Cluster: ODE Cluster 1 (Column 1)
+  ODE Step   27000, dt =   1.000E-03, t =     27.0
+ ODE Solution Cluster: ODE Cluster 1 (Column 1)
+  ODE Step   28000, dt =   1.000E-03, t =     28.0
+ ODE Solution Cluster: ODE Cluster 1 (Column 1)
+  ODE Step   29000, dt =   1.000E-03, t =     29.0
+ ODE Solution Cluster: ODE Cluster 1 (Column 1)
+  ODE Step   30000, dt =   1.000E-03, t =     30.0
+  
+ *STATUS: ------------------ Summary of Case 1 ---------------------------------
+  
+ INFO STABILITY:    --- no flow instabilities detected ---
+ 
+ ----------------------------------------------------------------------------------
+ INFO ODE Integration Statistics - ODE Solution Cluster #  1
+ ----------------------------------------------------------------------------------
+ Number of ODEs                     =          2
+ Number of time steps               =      30001
+ Number of time step adjustments    =          0
+ # of time steps with TS adjustment =          0
+ Max. normalized integration error  = 0.00000000
+ Average time step                  = 0.00099997 s
+ ----------------------------------------------------------------------------------
+ 
+ INFO Top time step limiting ODEs, nodes and parts:    
+   #STEPS      % ODE# TYP NODE Part Name  Inside Part Named
+ -------------------------------------------------------------------------
+     16178  53%    1 V1     1 Mass:1kg-1             On Map              
+  
+  CASE    COMPUTATIONS:  Elapsed Time: 440 Millisec                            
+  FINAL   COMPUTATIONS:  Elapsed Time: 450 Millisec                            
+  
+ Stopping the Run
+  
+ *STATUS: ------------------ END OF RUN 23-OCT-24 11:50:55 ---------------------
+  
+ Wed Oct 23 11:50:55 2024 C:\Users\jverriere\Documents\Demo-wartsila\Ex-Mech_v1_Final-V2025.glx file GLX generated successfully. Size is 214.983 KB.

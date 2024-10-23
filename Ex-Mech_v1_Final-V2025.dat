@@ -1,0 +1,335 @@
+|* GTSUITE [Version 2025.0.32200]
+|===DATA FILE for GTSUITE [Version 2025.0]=====================================
+| LOCDIR:  C:\Users\jverriere\Documents\Demo-wartsila
+| PROJECT: Ex-Mech_v1_Final-V2025.sim : GTSUITE
+| DATE:    Wednesday, October 23, 2024
+| TIME:    11:50:40
+| ENCODING: Cp1252(1252)
+| CREATOR: GTSUITE [Version 2025.0]
+| GT-ISE Build: 0.7500  gtt Build: 0.7500
+|===LICENSES===================================================================
+Licenses ----------------------------------------------------------------------
+|===RUN SPECIFICATIONS=========================================================
+TimeControl_S -----------------------------------------------------------------
+|TIMCYC DURATN MINDURATN DURATN2 MINDURATN2 STOPPERSEC FLUIDSS new2 MAINDRV MAINDRVREF NEWTSTEP 
+ continuous ign ign 30 ign ign off on ign ign off
+Initialization_S --------------------------------------------------------------
+|ISTATE PARTATTR RTLSOUTPUT RLTFILE RLTCASE FILE_NAME_READ_INIT FILE_NAME_READ 
+ user_imposed on ign ign ign ign ign
+FlowControl_S -----------------------------------------------------------------
+|%4 PARTS TIMCYCLFLW ISOLN MERGECIRC 
+# 1
+% def ign ExplicitControl off 
+ODEControl_S ------------------------------------------------------------------
+|%12 MECPARTS TIMCYCL DIFFEQTYPE IDYNOUT DYNTSR DYNTSM MERGEMECCIRC FMSSD FMSSV FMSSF JMSSPERD MOAP 
+# 1
+% def ign DiffEqControl_Explicit-def def def def on ign ign ign ign ign 
+Event-Based_S -----------------------------------------------------------------
+|EVBSS EVBSC EVBSP 
+ ign ign ign
+SignalControl_S ---------------------------------------------------------------
+|%3 CNTPARTS STEPSIZE FIXEDSIZE 
+# 0
+ThermalControl_S --------------------------------------------------------------
+|DTHT dthtlimit ncycpercyc HTSSTTOL DFSKIP NHTSKIP IHEATCSKIP 
+ def ign ign ign ign ign def
+ThermalCircuits_S -------------------------------------------------------------
+|%2 THRMPARTS HTSS 
+# 1
+% def steady 
+ConvergenceRLT_S --------------------------------------------------------------
+|%8 TRLTVAR CONVACTIVE RLTFLAG1 RLTTARG RLTMULT RLTTOLTYP USRTOL NCYCRLT 
+# 0
+ConvergenceRLT1_S -------------------------------------------------------------
+|MXMAVGRLT 
+ ign
+General_A ---------------------------------------------------------------------
+|EXTPRM IMPORTEXT EXTPARAM TSFXTRT SEED CONVEXCLLIST 
+ ign ign ign ign def ign
+Flow_A ------------------------------------------------------------------------
+|BENDTABLE OUTPUT2NDLAW DEADSTATE PIPECFL FSPLCFL WOOLCFL PCCCFL ISALTFPDS PTBLCMP ISALTLAMVLV_NEW ISNEWDIFF IREFRLKP MX_PROP_CALC FLDDIST MNMXTEMPLIMITS EXHTRANS clsclp2 COND_LIQ_DEF ISALTSOLV ISIMPLMULT IMPL_RES_DEF MF_UNDER FMASSRT ACCUM_DT EQUICAL NMW AFSTREF STABLECYL CYLFLOWVERSION CYLFLOW1 CYLFLOWSTEPS LIMIT_CYL_DT LIMIT_CYL_FLOW rltsativc CORRECTSCPROF PSPEMAP ITPTM 
+ ign off ign off off off ign on off off on on v2020 off off "always air" off ign v2021 off on ign off off off on def on off ign ign on off off on def on
+Mechanics_A -------------------------------------------------------------------
+|GRAVITY REDUCNS 
+ ign off
+Restart_A ---------------------------------------------------------------------
+|WRITESTART WRITEINTERVAL NUM_OF_RESTART_FILES STORE_END_CASE_DATA STORE_END_SIM_DATA KEEP_RESTART_FILES 
+ ign ign ign ign ign ign
+VersionChanges_A --------------------------------------------------------------
+|VERSION FLAGS LANONDEFORFTOBC RESULTS2 WOOLDT STDYWOOL FIX_TURBRLT_2xIN_combo PUMPVDP IMPROVEDSTALL FIXFRICTURBWG FIX_TOUT_TURB FIX_DAMPING2 PUMPVISCCORR LOW_TEMP_LIM ALPHA_PWSC2 IMPROVED_H_COMP INITCNT TIMEVARIABLE CONV_CONT_DEA PIDINIT_T_U CNTINDX SGPHMAINDRV RLTCMAINDRV SIHAINPTSEQ INTEUPDWIN AVGENGSPD2 ENGRLTINTEG ENGSENSINTEG3 FRICSRTEMPACT ENGSPDINIT FIXHTSENSRT PAVALVEHT EVOCYLHTR FIX_ECYL_HT_ISS FIXMAXT CYLRAD RGAS_GTI FLAME2 FIXKNINDTIMERLT KFCO2H2O FIXRLTSCOPYRT2 ACTUCOMB2 PMEP_INTER2 CORRCYLEM CYLVOLOFFSET2 PRESMCTPA KNOCKCYCSTART2 VOLEFF2S4S TRPFUEL_NEW FIXCCV FLMIXCYLINIT FIXHTRINI RADCALCSI FIXPISTACT_1 FIXDUALFUEL SOOTBALANCE FIXPRECHAM FIXCHEMAVAIL DILUTIONFIX2 FIXCYLEFFANALYSIS2 FIXNOXFREEZE NOXBLA KNOCKCRITERIA FIXENGCYLEVAP FIXVLFTFLW FIXNONCEQUIL CORRENRGSOL FDBPCM XYZPULBNDC EXCELUNIT TRUNC_XYTABLE MOVINGAVG PRFALKPLOADMODE PROFPERIOD XYZFUNC_UNIT RLTDMULTI RLTDMULTIUNIT FIX_XYTABLE_LOOKUPXY_SHIFT_MULT FIX_PART_OVERRIDE_SCALE HIDDENOVERRIDE PRFANG2DERV UNITCONVNOUNIT ELEINIT STATIN TWOSOLV FIXFCEL FLUXSIGN CORRSOLMSIGN CORRFLUXEDDYVSRC CORRMOTMREF ENDTPA_NEW ILFTR PT_ALTITUDE FLRVDI_NEW TK3DDI_NEW TK3D_GEM FLRV_TK3D_HTC IMPACCEL ACCUMULATOR_CIRCUIT TK3D_PORTDIA TMCS_ENABLE_MDOT_FIX SOLVE_SPECIES_CFD_CABIN RE_CRIT CONDENS_VERS bound_hum2 refr_sc_definition improv_pdtt geoarea_pltrf FIX_VFLOW_CONV resolve_iFrosting_circ THERMOPROPS1 EQCOMP LHM PROP_REFACT CPPRPMIN REFR_OIL_SUPERHEAT NEW_REFR_PROP REFR_OIL_TSU_DEF IMPR_MIXFLAG COMPSURF SURFEXTR SURFMEAN GT52INTMTH PASPGAUSS CORSHEARF PADPOSC PADMJMNT SIDPBRGIMP THBALCORR VISCPLKPCOR CRUSHCORR ACCURASPTQ TBAREACORR PACHSHEAR CYCTBCORR ZMOTBCORR LINKVEL RINGSOLNREFS TWISTWETR UWFACPGAS TWSTIFCOR TEXTNSCOR MTXHAAREA VOL_MPAS_HX_1 PDROPREFR HXMAP_LINEQ PD_CONDENSE HxNuMapRefrig2 LOUVER_CORR ONEVOLHX IMPMPLATE IMPFOULN RESHTMULT TUBEFINSCALING HXSPECS_FIX FIX_HTC_EFF FROSTVERSION portdia_mtxtubefin DIR_DELTAT CUSTRE_FRIC IJTFS FIXMAXAREANOTCH SPGCORRECT FIX_FLOWAREA_BCONE FIX_PIPE_COUPL INJNEW2 INJTRANS CORRECTGLCA INJBURNER2 INJPIPEMULTI2 FIX_INOZ_ENTH MTXSTORREDU MTXSTORTIMD NODALADJACENCY BEAMASMTX CONTSTIFC ELPHDEFC GMLSCNVCORR SPR2DMOM CORRECTEULR ICSEOCODECIRC LARGESTEPNOHT RATIODEF CYLMAXSTEP MPFIX DRVANGSYNC PART_SORT FIX_ARRAY_UNIT GUI_FIX_TEMPERATURE_SHIFT ENGCYL_REFR_1 RETRY_REFR_VEL CORRGENALPHA GASCHEMSOLVFIX NEWVALVR VALVEPROFUPDATE VALV_TYPE_DETECT CORRECTEDVALVETIMINGRLTS_COMBO VALVDIAPRTOVRD VALV_ARR_PRT THICKORF2 ICLAMMLT ICDCONTRVC ONUM_IMPL ATTACHED_CYL jvalvecorrectarea VALVEACTULIFTAREA_CD1 TUMBLESWIRLLOADING FIX_THERMOSTAT_INITIALIZATION TOT_PRES_FIX_VCSC IFSRIGHT FRAREA FIXIMPRFRICBEND TRANPUDDLEFRAC COND_ON AUTOFLOSS REFR_OIL_BENT_FSPLIT HEATINP_PNUM_FS PIPETABLE_ELEV_XYTABLE COND_MASS_BAL SEPARATEINLAY ECGBLKP HGLAM FLWTHMCPL1 PIPWALCIRCUM FSNCND ECSTTIME fixhgeff fixportheadarea teff_pipe_model WOOLTHERM FIX_FSPLIT_HTC FIX_RLTpstskrtQ FIX_htaeng1 FIX_HTR_SOLVE FIX_THERMOCOUPLE FIX_FM_HTR_AREA FIX_HTR_INIT_HASH TC_TEMP_INIT HGLAMRECT HGLOWCOLB IGT1000 WALL_CP_MANIP VARIABLE_DTHTI AMULT_MTBCON FIX_HTC_ACTU FIX_FECNDCONN FIX_TFE_MASS FAIL_RCON_IGN TDC_CLRHT_CYL FIX_TCAP_CONN FIX_TC_ADIABATIC 
+ v2025 ign on on on on v2023 on on on on v2022 on on v2025 off v2019 on on on on off on on on v2020 on v2019 on on on on on on on on on v2021 on on v2021_b1 v2022 v2022 on v2017 on v2018_b2 on v2018 off on on on v2018 v2020 on v2023 on v2021 v2024 on on on off off on on on v2018 on on on off off on on on on on on on on on on on v2025 on on on on v2018 on on v2021 v2021 v2020 on off on on on on on v2024 v2024 on off on on on v2024 on on on on on v2024 on on New on on New Nodes on on on on on on on on on on on on on on on on on on on v2020 on on on v2018 on on on v2022 on v2021 on on v2023 on on on on on on off on v2022 v2016_b2 on v2019 v2020_b2 on "Compressed Sparse Column" "v2022 (CSR sequential)" on on on on off on on on on on on v2016 on on off on on on on on v72_b2 on on v2024 on on v72 on on on on on v2023 on on on on on on on on improved_v2020 on on on on on on on v2020 on on on on on v2024 on on on on on on on on on on on off on on on on on on on on on on
+Paths_Array_A -----------------------------------------------------------------
+|DIRRAD DIRARRAY 
+ on ign
+Paths_A -----------------------------------------------------------------------
+|DIR 
+DIR:1> ign <
+MiscFiles_A -------------------------------------------------------------------
+|%2 MISCFILES ASCBIN 
+# 1
+% ign ASCII 
+Main_O ------------------------------------------------------------------------
+|OPTOFF OPTADV OPTOLD OPTTYPEHELP ONEOBJ MULTOBJ MULTOBJWS TRANSTARG INTBASIS CUSTOMSIGNAL OPTCASEHELP CASIND CSSWEEP OPTVAR OPTAIM OPTVAL CASEWT OBJFXNDEF MAXOPT OPTMETHOD POPSIZE NUMGEN NSGAADV XORATE XODI MURATE MUDI GASEED BAKAPPA BARESTS IOPTSTAT IOPTPLOT MONITOR OPTSTFILE FASLOC MAXITER USEDOE TIMEOUT AUTOSUP SAVEITERFILE OPTCLOSE 
+ on ign ign ign ign ign ign ign ign ign ign ign ign ign ign ign ign ign ign ign ign ign ign ign ign ign ign ign ign ign ign ign ign ign ign ign ign ign ign ign ign
+Factors_O ---------------------------------------------------------------------
+|%8 OPTIND CASEHNDL RANGE RANGEMIN RANGEMAX RESOLPERC INTONLY DISCVALUES 
+# 0
+Responses_O -------------------------------------------------------------------
+|%8 MDEPVARRLT MOBJ MOBJCSNUM MOBJFXNDEF MOBJTRGT MOBJRW MOBJNORM RESPCUSTOMLABEL 
+# 0
+Transient_Targeting_O ---------------------------------------------------------
+|%9 TTSIGNAL TTTARGET TTTERMWT TTCASEWT TTSTIME TTETIME TTSANG TTEANG TTLABEL 
+# 0
+Stopping_Criteria_O -----------------------------------------------------------
+|FACTRES TRGTCONV TRGTPERC RESPANDDESIGNS THRESHPERCA OPOTCONVDESIGNS MOCONV GENDIST MOCONSECGEN OPTMAXTIME 
+ ign ign ign ign ign ign ign ign ign ign
+Constraints_O -----------------------------------------------------------------
+|%5 CONSTRLT LOLIMIT HILIMIT PENALTY CONSTCUSTLABEL 
+# 0
+Data_Storage_D ----------------------------------------------------------------
+|DTRLTSS RLTUPDTPART CaseRLTHeader1 CRLTLEVELnew CRLTLEVEL2 CRLTLIST TimeRLTHeader1 TRLTLEVELnew TRLTLEVEL2 TRLTLIST TRLTMAX RLTFREQ DTMAXRLT CRLTLIST2 GLOBALRLTS TIME_SHIFT SUPPRESSTIME PLTSUPP PLTSUP2 TBLSUPP THINNING WARNING 
+ def ign on All All ign ign ign ign ign ign ign ign ign on ign ign off off off Automatic off
+General_D ---------------------------------------------------------------------
+|DTPLOT RAMRLT ENGYPLTS BRFSUPP PERFPLOT 
+ on off ign on off
+GT-POST_Setup_D ---------------------------------------------------------------
+|XCASERLT XTIMERLT XTIMERLT_UNIT EXTDATAFILE EXTDATASHEET EXTFORMAT GPDFILE NoPartRename VIEWMODE ISEGUXCONFIG NEWGUXFILE NOCOMPANION CompanionGUPlot 
+ def time 36 ign ign ign def off off ign ign on ign
+Flow_D ------------------------------------------------------------------------
+|NUMANIM MICDATA OLT NUMORD NUMHARM DEWFLAG OUTPUT 
+ ign ign ign ign def LastRLTInterval no
+ODE-Mech_D --------------------------------------------------------------------
+|ODEPLTS MECPLTO KINPLTO EIGPLTO 
+ on ign ign ign
+ScoreboardRLTs_D --------------------------------------------------------------
+|CrankScore CylScore TurboScore LubeScore InjScore VehScore HXScore RefrigScore BatScore 
+ Engine Cylinder Turbo Lubrication Injector Vehicle HeatExchangers RefrigFlowMach Battery
+UserScoreboardRLTs_D ----------------------------------------------------------
+|UsrScrName UsrScrRLTList 
+UsrScrName:1> def <
+UsrScrRLTList:1> ign <
+EndOfRunTables_D --------------------------------------------------------------
+|ISETUP PARLAB ICONFIG EORTAB_1 EORTAB_2 EORTAB_3 EORTAB_4 EORTAB_5 
+ Case_Setup ign Column ign ign ign ign ign
+Automation_S ------------------------------------------------------------------
+|PRE_PYTHON_SCRIPT POST_PYTHON_SCRIPT 
+ ign ign
+Output_Files_S ----------------------------------------------------------------
+|PMCREATIONFILES 
+PMCREATIONFILES:1> ign <
+CSHIL_A -----------------------------------------------------------------------
+|CLEAN_FMU FMUROOT FMUMODHARN 
+ off ign on
+|# 1039018|973741|979607|979608|962670|962674|962785|977869|993573|982465|973107|962800|1021856|
+|===PLOT SPECIFICATIONS========================================================
+PlotPoints --------------------------------------------------------------------
+|{XLOC} PLPNT PL_RANGE XAXIS_TYPE SAMPL_TYPE SAMPL_INTERVAL INTERPOL ZEROTIME XTIME_UNIT NUMCYCLES
+  15000 Automatic Automatic Timestep 1.0 use_nearest_volume off 36 1
+PlotData ----------------------------------------------------------------------
+|PART# PLOT {XLOC} PLPNT PL_RANGE XAXIS_TYPE SAMPL_TYPE SAMPL_INTERVAL
+65567 INPT {1} def ign ign def def
+ObjectPlotData ----------------------------------------------------------------
+Setup Main_O O_IOPTPLOT_1
+Setup Main_O O_IOPTPLOT_2
+Setup Main_O O_IOPTPLOT_3
+Setup Main_O O_IOPTPLOT_4
+Setup General_D O_DTPLOT_1
+Setup General_D O_DTPLOT_2
+Setup ODE-Mech_D O_ODEPLTS_1
+Setup ODE-Mech_D O_ODEPLTS_2
+Setup ODE-Mech_D O_ODEPLTS_3
+Setup ODE-Mech_D O_ODEPLTS_4
+Setup ODE-Mech_D O_ODEPLTS_5
+Setup ODE-Mech_D O_ODEPLTS_6
+Setup ODE-Mech_D O_ODEPLTS_7
+Setup ODE-Mech_D O_ODEPLTS_8
+Setup ODE-Mech_D O_ODEPLTS_9
+Setup ODE-Mech_D O_ODEPLTS_10
+Setup ODE-Mech_D O_ODEPLTS_11
+|===OBJECT AND PART COUNT======================================================
+ObjectPartCount ---------------------------------------------------------------
+|TEMPLATE OBJECTS PARTS RLTS MAXINPUT MAXOUTPUT
+Damper 1 1 
+DiffEqControl 1 0 
+FlowControlExplicit 1 0 
+Force 1 1 
+Ground 1 1 
+Mass 1 1 
+MonitorSignal 1 1 1 0 
+RLTScoreboardListDef 9 0 
+SensorConn 1 1 
+Spring 1 1 
+PhantomConn 1 1 0
+NameValuePairs ----------------------------------------------------------------
+CASE_SETUP_CASE_ON=1   | Number of cases turned on in Case Setup
+DOE_CASE_ON=0   | Number of DOE cases (experiments) to be run
+CASES=1   | For array allocation. CasesOn x DOE_CASE_ON + totalCases
+NMXGMATX=0
+NMYGMATX=0
+MXMULTPROF=0
+PAMULTPROF=0
+NCTMXCYL=0
+NGEARMAX=0
+AXZONE=0
+NSENSORS=1
+NACTUATORS=0
+NMULTLRDNN=0
+NMAXCHAINLINKS=0
+NMAXCHAINLINKSSI=0
+NMAXBELTELEMS=0
+NMAXBELTELEMSTB=0
+NMAXBELTELEMSCVT=0
+NMAXBEAMGUIDE=0
+PISTCROWNCONT=0
+PISTCROWNCONTI=0
+NPIPEELEVOBJ=0
+NPIPEELEVPART=0
+NPIPEACCELOBJ=0
+NPIPEACCELPART=0
+NPIPEPOLOBJ=0
+NPIPEPOLPART=0
+NPIPECARTOBJ=0
+NPIPECARTPART=0
+NPIPE3DOBJ=0
+NPIPE3DPART=0
+NLOCMAX=1
+NEQMXODEQ=0
+NINMXODEQ=0
+LASTPARTID=65569
+MXPIPETABLE=0
+NTWALSOLNPARTS=0
+NINPSIMUHARN=0
+NOUTSIMUHARN=0
+NINPSHFROMSIMULINK="-"
+NOUTSHFROMSIMULINK="-"
+SITETABLES=0
+NSPRGMAXARCS=0
+NSTAGMAXARCS=0
+NSENSMAVG=0
+NSENSFOF=0
+NSPECMAVG=0
+NSPECFOF=0
+CNT_OVRD=0
+NBATT_CLSP=0
+NBATT_AU3D=0
+NBATT_AUCY=0
+NBATT_AURE=0
+NINPSIHA=0
+NOUTSIHA=0
+NPARAMSIHA=0
+RESOLVEDPARAMNAMES="-"
+C_COMPILER_TYPE="Gcc"
+C_COMPILER_DIRECTORY="C:\MinGW"
+C_COMPILER_LINK_OPTS="-"
+C_COMPILER_OPTS="-"
+DELETE_OUT=0
+DELETE_DAT=0
+ORIGINALBUILD=3
+ORIGINALVER=7
+GTIDEBUG=4
+GTSTORE_CHECK=0
+SIM_ID=c7b2ce2f-e09b-4449-81eb-96e56fe1ce2e
+|===REFERENCE OBJECTS==========================================================
+DiffEqControl -----------------------------------------------------------------
+|NAME INTTYPE MATXNORDOPT MATXSPRSOLV MATXINVSCHM EULDTMXODE EULIMXITS EULTSRLX EULRELACC EULDNORM EULVNORM EULRDAN EULRVACCN EULHPACCN EULACCEM EULVNORMEM EULINORMEM EULLNORMEM EULFNORMEM RKDTMXODE RKIMXITS RKTSRLX RKRELACC RKDNORM RKVNORM RKRDAN RKRVACCN RKHPACCN RKACCEM RKVNORMEM RKINORMEM RKLNORMEM RKFNORMEM APDTMXODE APIMXITS APTSRLX APMAXORD APRELACC APABSACC APDNORM APVNORM APRDAN APRVACCN APHPACCN APACCEM APVNORMEM APINORMEM APLNORMEM APFNORMEM TRAPDTMXODE TRAPIMXITS TRAPTSRLX TRAPRELTOL TRAPABSTOL TRAPCRIJAC TRAPCRINTN TRAPMAXITR HHTDTMXODE HHTIMXITS HHTTSRLX HHTRELTOL HHTABSTOL HHTALPHA HHTCRIJAC HHTCRINTN HHTMAXITR RAD2DTMXODE RAD2IMXITS RAD2TSRLX RAD2RELTOL RAD2ABSTOL RAD2CRIJAC RAD2CRINTN RAD2MAXITR RAD3DTMXODE RAD3IMXITS RAD3TSRLX RAD3RELTOL RAD3ABSTOL RAD3CRIJAC RAD3CRINTN RAD3MAXITR SDCDTMXODE SDCIMXITS SDCTSRLX SDCRELTOL SDCABSTOL SDCCRIJAC SDCCRINTN SDCMAXITR DAEHHTDTMXODE DAEHHTIMXITS DAEHHTTSRLX DAEHHTRELTOL DAEHHTABSTOL DAEHHTALPHA DAEHHTCRIJAC DAEHHTCRINTN DAEHHTMAXITR DAEGADTMXODE DAEGAIMXITS DAEGATSRLX DAEGARELTOL DAEGAALROH DAEGACRIJAC DAEGACRINTN DAEGAMAXITR DAEGAFORODE1 DAEGARHOODE1 STAANLOPT STADTMXODE STASOLTYP STARELTOL STAABSTOL STAFRCSTPTYP STANFRCSTP STAILMTERMS 
+ $ DiffEqControl_Explicit-def Explicit-Runge-Kutta Cuthill-McKee Skyline SVD
+ ign ign ign ign ign ign ign ign ign ign ign ign ign ign
+ def def def 1E-4 0.001 0.01 0.001 0.01 25000 1.e-6 1.e-3 1.e-3 1.e-3 0.1
+ ign ign ign ign ign ign ign ign ign ign ign ign ign ign ign ign
+ ign ign ign ign ign ign ign ign
+ ign ign ign ign ign ign ign ign ign
+ ign ign ign ign ign ign ign ign
+ ign ign ign ign ign ign ign ign
+ ign ign ign ign ign ign ign ign
+ ign ign ign ign ign ign ign ign ign
+ ign ign ign ign ign ign ign ign ign ign
+ ign ign ign ign ign ign ign ign
+FlowControlExplicit -----------------------------------------------------------
+|NAME TSMAX TSMULT FRM_DT RATIOMXFLOWDT SSTOL TEMPCONV TEMPRATECONV NCYCFLW FLOSS DEFINTRP CFCONS HGCONS ZEROQ UNSTDYMOD CFUNSTDY HGUNSTDY REALGAS VOLVISC MVSOLV PLUGFLOW MOMSOLN REFPROP_ORIF 
+ $ ExplicitControl def def on def def ign ign def
+ Automatic improved def def off v2019 def def GTI_cylinder mass off Off off off
+|# 972098|
+RLTScoreboardListDef ----------------------------------------------------------
+|NAME RLTScoreL 
+ $ Battery
+RLTScoreL:5> socxav voltav currav powrav tempav <
+|++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ $ Cylinder
+RLTScoreL:6> volefcm imepc cylpmx ieffc burnmfcs faefectv <
+|@ This list contains the default RLTs displayed in the "Cylinder" Scoreboard
+|++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ $ Engine
+RLTScoreL:5> avgrpm imep bmep volef volefm <
+|@ This list contains the default RLTs displayed in the "Engine" Scoreboard
+|++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ $ HeatExchangers
+RLTScoreL:9> favl pavl htav hx-exthtrall hx-inthtrall hx-masext hx-masint hx-intspi hx-piext <
+|@ This list contains the default RLTs displayed in the "Heat Exchangers" Scoreboard
+|++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ $ Injector
+RLTScoreL:22> totmnozcp xtotp1 xtotp2 xtotp3 xtotp4 xtotp5 xtotp6 xtotp7 xtotp8 xtotp9 xtotp10 totvnozcp vtotp1 vtotp2 vtotp3 vtotp4 vtotp5 vtotp6 vtotp7 vtotp8 vtotp9 vtotp10 <
+|@ This list contains the default RLTs displayed in the "Detailed Injector" Scoreboard
+|++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ $ Lubrication
+RLTScoreL:11> jbrgqavg jbrgfric jbrgftmn jbrgtoil jbrgtris fmr-flrt pmp-pwra pmp-dpa vfr avgpwrs dpavg <
+|@ This list contains the default RLTs displayed in the "Lubrication" Scoreboard
+|++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ $ RefrigFlowMach
+RLTScoreL:7> cmp-rpma cmp-prma cmp-prsa pmp-dpa cmp-masa cmp-pwra cmp-effa <
+|@ This list contains the default RLTs displayed in the "REFRIG FLOW" Scoreboard
+|++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ $ Turbo
+RLTScoreL:5> cmp-rpma cmp-prma cmp-masa cmp-pwra cmp-effa <
+|@ This list contains the default RLTs displayed in the "Turbocharger" Scoreboard
+|++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ $ Vehicle
+RLTScoreL:5> vehispd engrpm output1 output2 output3 <
+|@ This list contains the default RLTs displayed in the "Vehicle" Scoreboard
+|===COMPONENT OBJECTS==========================================================
+Force -------------------------------------------------------------------------
+|NAME FORCX PHASANG 
+ $ 1N 1 ign
+Ground ------------------------------------------------------------------------
+|NAME X0 T0 CADGEOM 
+ $ Ground def def
+ ign
+Mass --------------------------------------------------------------------------
+|NAME MASS X0 X0P CADGEOM 
+ $ 1kg 3000 0 0
+ ign
+MonitorSignal -----------------------------------------------------------------
+|NAME DISPLAY TITLE PREVCASE LINEWID REFCURVE SCRL XAXISTYPE XMAX LOGX YRESCALE YLABEL YMIN YMAX LOGY1 YLAB2 YMIN2 YMAX2 LOGY2 %9 YLEG YSIG YAXIS DISPLAYCURV FLINETYPE FLINETHK FSYMBOL FSYMBSIZE USERCOLORRGB 
+ $ Monitor show ign def 2 ign off time def off on Position 0 1 off ign ign ign ign
+# 1
+% Position ign Y1 show solid 1 none 6 ign 
+|# 
+|===CONNECTION OBJECTS=========================================================
+Damper ------------------------------------------------------------------------
+|NAME DAMPX DAMPP 
+ $ Damper 0.1 ign
+Spring ------------------------------------------------------------------------
+|NAME STIFX PRETX FRCC PREC STIFP 
+ $ Spring 2 0 ign ign ign
+|# 2539|
+|===CIRCUITS INFO==============================================================
+CircuitsList ------------------------------------------------------------------
+|CIRCUIT# CATEGORY
+1 Mechanical "General - Explicit"
+2 Control
+|===PARTS MAP==================================================================
+PartsList ---------------------------------------------------------------------
+|PART# GEODATA TEMPLATE OBJECT NAME CIRCUITS OVERRIDES
+65563 022014013013 Mass 1kg 1kg-1 {1}
+65562 017014004004 Force 1N 1N-1 {1}
+65566 035014004013 Ground Ground Ground-1 {1}
+65567 022020013013 MonitorSignal Monitor Monitor-1 {2}
+SystemMap ---------------------------------------------------------------------
+|PART# GEODATA TEMPLATE OBJECT CMP1 CMP2 NAME CIRCUITS OVERRIDES
+65568 022017004004 SensorConn def 65563.1 65567.1 1 {2} YINIT=def unitDef1=3 unitUsr1=3 unitDef2=0 unitUsr2=0
+65565 028015004004 Damper Damper 65563.0 65566.1 Damper-1 {1}
+65564 028013004004 Spring Spring 65563.0 65566.1 Spring-1 {1}
+65569 001001001001 PhantomConn def 65562.1 65563.0 65569 {1} 
+|===CASE SPECIFICATIONS========================================================
+Parameters --------------------------------------------------------------------
+???
+End ---------------------------------------------------------------------------
