@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ISO-8859-1"?><!--Internal Information used to aid in debugging customer issues:
 Build Version: 0.7500
-Time Stamp: 10/23/2024 11:35:40 46ms
+Time Stamp: 10/23/2024 11:42:21 969ms
 License Information: Licensed Feature: GTguiB
 Entitlement ID: ORTBMPXKIXWPPZLJUXTSGIWCPZCODZ
 License Server: gtg-cluster
@@ -992,7 +992,7 @@ JMF    version : 2.1.1e
         </object>
         <object id="o60034" name="1kg" t_id="136">
             <value>
-                <va a_id="1619" text="1" unitID="19"/>
+                <va a_id="1619" text="2" unitID="19"/>
                 <va a_id="1620" text="0" unitID="3"/>
                 <va a_id="1621" text="0" unitID="41"/>
                 <va a_id="988928" text="ign" unitID="0"/>
